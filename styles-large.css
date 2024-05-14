@@ -146,12 +146,41 @@ justify-content: space-between;
     }
 
     .purple{
+        position: relative;
         width:75%;
         display: flex;
         gap:5%;
         padding: 2rem;
         
     }
+    
+    .purple::before,
+    .purple::after {
+				content: " ";
+				z-index: -1;
+				position: absolute;
+				width: calc(100% + 5px);
+				height: calc(100% + 5px);
+				border-radius: 5%;
+				top: -2.5px;
+				right: -2.5px;
+                background: repeating-linear-gradient(
+					 45deg,
+					rgb(226,153,86),
+					hsl(300, 24%, 96%),
+					hsl(303, 10%, 53%),
+					#ee68a4,
+					#4b224e
+    
+				);
+				
+			}
+
+			.purple::after {
+				filter: blur(2px);
+			}
+
+
     .purple.two{
        margin-left: 50px;
     }
@@ -238,7 +267,7 @@ h1,
 	color: rgb(154, 148, 156);
 }
 article {
-	background-color: rgb(75, 34, 78);
+	background-color: #4b224e;
 	color: white;
 }
 .thin {
