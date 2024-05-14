@@ -29,15 +29,12 @@ html {
 	height: 100%;
 }
 
-body
- {
+body {
 	width: 100%;
 	min-height: 100vh;
-
-	
 }
 
-main{
+main {
 	height: 100%;
 }
 
@@ -46,6 +43,9 @@ main{
   TYPOGRAPHY
   ===========
   */
+html {
+	font-size: 62.5%;
+}
 body {
 	font-family: "League Spartan", sans-serif;
 	font-weight: 400;
@@ -295,8 +295,6 @@ article {
 	}
 
 } */
-
-
 
 /*
   =============
