@@ -1,0 +1,254 @@
+
+	/*
+===========
+CSS Reset
+===========
+*/
+
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		line-height: 1.5;
+	}
+    
+html {
+    height: 100%;
+    padding-bottom:  10px;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+
+	img,
+	picture,
+	video,
+	canvas {
+		display: block;
+		max-width: 100%;
+	}
+	/*
+  ===========
+  TYPOGRAPHY
+  ===========
+  */
+  html{
+    font-size: 62.5%;
+}
+  h1{
+    font-size: 4.8rem;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  body{
+    font-size: 1.5rem;
+  }
+  .section-one p{
+    font-size: 1.6rem;
+  }
+  .purple{
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+	/*
+  ===========
+  LAYOUT
+  ===========
+  */
+
+    /* BORDERS*/
+    /* body{
+        border: 2px dashed yellow ;
+    }
+    main{
+        border: 5px dashed red ;
+    }
+    section{
+        border: 3px solid pink;
+    }
+
+    .box{
+        border: 2px dotted magenta;
+    }
+    .purple{
+        border: 2px dotted blue;
+    }
+
+    .review{  
+        border: 2px dotted purple;
+    }
+
+    article header {
+        border: 2px solid pink
+    } */
+/* ======================================== */
+	body {
+		
+		/* This keeps the page from scrolling beyond 100vh  */
+		overflow: hidden;
+	}
+
+	main {
+		width: 80%;
+       height: 80%;
+		display: flex;
+        margin: 10vh 10%;
+        justify-content: space-between;
+
+		/* gap: 5%; */
+		padding: 0%;
+		flex-direction: column;
+		
+	}
+	
+    section{
+display: flex;
+height: 40%;
+justify-content: space-between; 
+    }
+
+    .section-one{
+        justify-content: space-between;
+       
+        
+    }
+   
+    .section-two{
+        height: 45%;
+
+    }
+
+    .box.one{
+        width: 35%;
+        text-align: left;   
+
+    }
+
+    h1{
+        margin-bottom: 2rem;
+    }
+
+
+    .box.two{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .purple{
+        width:75%;
+        display: flex;
+        gap:5%;
+        padding: 2rem;
+        
+    }
+    .purple.two{
+       margin-left: 50px;
+    }
+    .purple.three{
+        margin-left: 100px;
+    }
+
+    .review{  
+        width: 32%;
+        height:244px;
+        padding: 2rem; 
+        display: flex;
+        flex-direction: column;
+       
+        justify-content: space-around;
+        border-radius: 8px;
+
+    }
+    
+     article header {
+            display: flex;
+            gap: 3rem;
+        }
+    
+    article header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .thin{
+        display: block;
+    }
+
+    .review.two{  
+       
+        margin-top: 20px; 
+    }
+
+    .review.three{  
+        margin-top: 30px;
+     }
+
+    
+	/*
+  ===========
+  BACKGROUND/IMAGES
+  ===========
+  */
+	 body {
+		background: url(social-proof-section-master/images/bg-pattern-top-desktop.svg)
+				top left no-repeat,
+			url(social-proof-section-master/images/bg-pattern-bottom-desktop.svg)
+				bottom right no-repeat;
+	} 
+
+
+/*
+  ===========
+  COLORS
+  ===========
+  */
+
+/* ### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%) */
+
+h1,
+.purple {
+	color: hsl(297, 34%, 25%);
+}
+.purple {
+	background-color: hsl(300, 24%, 96%);
+}
+
+.section-one p {
+	/* color: hsl(300, 24%, 53%) */
+	color: rgb(154, 148, 156);
+}
+article {
+	background-color: rgb(75, 34, 78);
+	color: white;
+}
+.thin {
+	color: hsl(333, 80%, 67%);
+}
+
+/*
+  =============
+  ACTIVE-STATES
+  ===========
+  */
+
+/*

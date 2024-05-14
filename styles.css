@@ -1,0 +1,305 @@
+/*
+===========
+CSS Reset
+===========
+*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas {
+	display: block;
+	max-width: 100%;
+}
+/*
+  ===========
+  GENERIC STYLES
+  ===========
+  */
+html {
+	height: 100%;
+}
+
+body
+ {
+	width: 100%;
+	min-height: 100vh;
+
+	
+}
+
+main{
+	height: 100%;
+}
+
+/*
+  ===========
+  TYPOGRAPHY
+  ===========
+  */
+body {
+	font-family: "League Spartan", sans-serif;
+	font-weight: 400;
+	font-size: 1.8rem;
+	text-wrap: pretty;
+}
+
+h1 {
+	font-size: 4.5rem;
+	text-wrap: balance;
+	line-height: 1.1;
+	font-weight: 700;
+	text-align: center;
+}
+
+.purple {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2rem;
+}
+.thin {
+	font-weight: 700;
+}
+
+/*
+  ===========
+  LAYOUT
+  ===========
+  */
+main {
+	/* border: 2px solid saddlebrown; */
+	padding: 2rem;
+	padding-bottom: 12rem;
+}
+h1 {
+	margin-bottom: 1.6rem;
+	margin-top: 7rem;
+}
+section {
+	/* border: 3px solid salmon; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	gap: 2rem;
+}
+.section-one {
+	gap: 4rem;
+}
+.box {
+	/* border: 2px solid rgb(139, 139, 19); */
+	width: 100%;
+	height: auto;
+}
+
+.purple {
+	/* border: 3px solid rgb(17, 45, 172); */
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border-radius: 8px;
+}
+.step {
+	margin-bottom: 5rem;
+}
+
+article {
+	/* border: 2px solid rgba(249, 249, 14, 0.765); */
+	width: 100%;
+	padding: 25px;
+	border-radius: 8px;
+}
+article header img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.thin {
+	display: block;
+	margin-top: -0.5rem;
+	font-weight: 300;
+}
+/*
+  ===========
+  BACKGROUND/IMAGES
+  ===========
+  */
+
+body {
+	background: url(social-proof-section-master/images/bg-pattern-top-mobile.svg)
+			no-repeat,
+		url(social-proof-section-master/images/bg-pattern-bottom-mobile.svg)
+			bottom -80vh center no-repeat;
+}
+/*
+  ===========
+  COLORS
+  ===========
+  */
+
+/* ### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%) */
+
+h1,
+.purple {
+	color: hsl(297, 34%, 25%);
+}
+.purple {
+	background-color: hsl(300, 24%, 96%);
+}
+
+.section-one p {
+	/* color: hsl(300, 24%, 53%) */
+	color: rgb(154, 148, 156);
+}
+article {
+	background-color: rgb(75, 34, 78);
+	color: white;
+}
+.thin {
+	color: hsl(333, 80%, 67%);
+}
+
+/*
+  =============
+  ACTIVE-STATES
+  ===========
+  */
+
+/*
+  =====================================
+  LARGE SCREENS 
+  =====================================
+  */
+@media (min-width: 600px) and (max-width: 1024px) {
+	main {
+		padding: 17rem;
+		font-size: 22px;
+	}
+}
+/* @media (min-width: 1025px) {
+	main {
+		
+	}
+	body {
+		font-size: medium;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 80px;
+	}
+	h1 {
+		margin-top: 0;
+		text-wrap: normal;
+		font-size: 57px;
+		text-align: left;
+	}
+
+	section {
+		flex-direction: row;
+		width: 100%;
+		height: 100;
+	}
+	.box {
+	}
+
+	.box.one {
+		width: 40%;
+
+		text-wrap: pretty;
+	}
+	.box.two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+
+		text-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.section-one {
+		gap: 9%;
+		justify-content: center;
+		align-items: center;
+		font-size: 22px;
+	}
+	
+
+	.step {
+		margin-top: 10rem;
+		flex-wrap: nowrap;
+	}
+	.step div {
+		margin-right: 30px;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.purple {
+		width: 480px;
+		justify-content: space-evenly;
+		padding: 1.5rem 2.5rem;
+		font-size: 20px;
+	}
+
+	.purple.one {
+		margin-left: 0px;
+	}
+
+	.purple.two {
+		margin-left: 100px;
+	}
+
+	.purple.three {
+		margin-left: 200px;
+	}
+
+	article {
+		display: flex;
+		padding: 40px;
+		margin-right: 20px;
+		width: 33%;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 340px;
+		font-size: 20px;
+	}
+
+	article.one {
+		margin-top: 20px;
+	}
+	.review.two {
+		margin-top: 35px;
+	}
+
+	.review.three {
+		margin-top: 50px;
+	}
+
+} */
+
+
+
+/*
+  =============
+  ACTIVE-STATES
+  =============
+  */
